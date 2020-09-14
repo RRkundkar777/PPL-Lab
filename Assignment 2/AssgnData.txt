@@ -1,0 +1,94 @@
+jmp - this command performs unconditional jump
+
+cmpl - compares the contents of general-purpose register (GPR) RA with the contents of GPR RB as unsigned integers and sets one of the bits in Condition Register Field BF.
+
+jle - instruction is a conditional jump that follows a test.
+
+imul - The single-operand form of imul executes a signed multiply of a byte, word, or long by the contents of the AL, AX, or EAX register and stores the product in the AX, DX:AX or EDX:EAX register respectively.
+
+add - The add instruction adds together its two operands, storing the result in its first operand. Note, whereas both operands may be registers, at most one operand may be a memory location. 
+
+addl - 
+
+sub - The SUB instruction subtracts the value of Operand2 or imm12 from the value in Rn 
+
+push -  0xdebf        ; push a value to the stack
+pop -  eax           ; eax is now 0xdebf
+
+mov - The mov instruction is used to move data into registers or RAM. In other words, it is used to read and write into memory. 
+
+movl - operand specified length
+    movq moves a quadword (64-bits) from source to destination.
+    movl moves a long (32-bits) from source to destination.
+    
+ endbr64 - top of all the main methods
+ 
+xor - The xor instruction performs a logical XOR (exclusive OR) operation.
+    	 This is the equivalent to the "^" operator in python:
+	>>> hex(0x18 ^ 0x7575)
+	'0x756d'
+
+nop - The nop (no operation) instruction does nothing.
+    	  It only indicates to go to the next instruction.
+    	  It's the equivalent to xchg eax, eax
+    	  
+ je - The jz instruction is a conditional jump that follows a test.
+    	It jumps to the specified location if the Zero Flag (ZF) is set (1).
+    	jz is commonly used to explicitly test for something being equal to zero whereas je is commonly found after a cmp instruction.
+    	
+ leaveq - is equivalent to movl %ebp, %esp
+						     popl %ebp
+		opposite of enter (push   %rbp   ; mov    %rsp,%rbp)
+
+retq - The callq instruction takes one operand, the address of the function being called. It pushes the return address (current value of %rip ) onto the stack and then jumps to that address. The retq instruction pops the return address from the stack into the destination %rip , thus resuming at the saved return address.
+
+
+Commands Executed
+
+gcc -save-temps filename.c
+objdump -l -d -r filename.o
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
