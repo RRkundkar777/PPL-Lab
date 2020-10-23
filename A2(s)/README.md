@@ -25,6 +25,8 @@ It contains the assembly instructions.
 ## Output file
 The output file (.o) is a relocatable ELF file.
 
+It is output of the assembler. It contains the Machine Code.
+
 ELF stands for Executable and Linkable Format
 
 These files are linked by linker to produce the final output executable.
