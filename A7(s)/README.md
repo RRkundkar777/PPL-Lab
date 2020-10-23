@@ -21,3 +21,9 @@ There are situations where there is probablity that the program might give error
 Normally when a program encounters an error, it collapses and does not execute further.
 But this thing can be avoided by handling the error/Exception
 ```
+
+In this code, a calculator is created which performs operations on binary numbers.
+
+A number of exceptions are created and handled such as ZeroDivisionError, BinaryBitError etc.
+
+But if something goes wrong, the output must not be shown. Therefore an exception is raised at the end but not Handled.
