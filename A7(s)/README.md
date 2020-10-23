@@ -18,6 +18,6 @@ Thats being able to raise Exceptions is important
 ## Exception Handling
 ```
 There are situations where there is probablity that the program might give error but you want the rest of code to be executed.
-Normally when a program encounters an error, it collapses and does not further
+Normally when a program encounters an error, it collapses and does not execute further.
 But this thing can be avoided by handling the error/Exception
 ```
