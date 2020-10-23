@@ -18,3 +18,18 @@ Multiple Inheritance
 Multilevel Inheritance
 ```
 In this assignment, we have demonstrated single and multilevel inheritance.
+
+## Diamond Shaped Problem
+The diamond problem sometimes called as Deadly Diamond of Death is the problem is the problem which does not allow languages like Java to support multiple inheritance.
+
+Although Python supports multiple inheritance, it is not recommended to inherit from more than one Class.
+
+
+
+
+
+
+
+
+
+
