@@ -22,7 +22,17 @@ next
 ```
 ## The Stack Section
 
+The stack section contains function parameters, local variables and a return address.
 
+Basically, a stack stores all the essential data of function call.
+
+In this assignment we studied how this data is stored inside a stack. What is memory layout of C programs.
+
+We constructed a memory layout diagram for the same.
+
+## Buffer Overflow Attack
+
+As a part of understanding the Memory Layout of C  programs and the Stack, we implemented a program which skips the instruction "X = 1" by modifying the return address of a function.
 
 
 
