@@ -8,8 +8,7 @@ class animal():
 
         self.legs = 4
         self.tail = 1
-        
-
+ 
 class wild_animal(animal):
     def __init__(self):
         super().__init__()
@@ -39,30 +38,56 @@ class aquatic_animal(animal):
 
 
 class Elephant(herbivores):
-    def __init__(self):
-        super().__init__()
-        self.trunk = 1
-        self.nose = 0
-        self.legsize = "huge"
-        self.earsize = "Large"
+	def __init__(self):
+	        super().__init__()
+	        self.trunk = 1
+	        self.nose = 0
+	        self.legsize = "huge"
+	        self.earsize = "Large"
+	        self.__tusks = 2
+	        
+	def get_tusks(self):
+		print(f"Tusks = {self.__tusks}")
+	def set_tusks(self,tusks):
+		self.__tusks = tusks
+		
+	def __del__(self):
+		print("Please help! They want my tusks!")
 
 class Fish(aquatic_animal):
-    def __init__(self):
-        super().__init__()
-        self.legs = 0
-        self.tail = 0
-        self.ears = 0
-        self.nose = 0
-        self.nostrils = 2
-        self.voice = "Grunt"
-
+	def __init__(self):
+	        super().__init__()
+	        self.legs = 0
+	        self.tail = 0
+	        self.ears = 0
+	        self.nose = 0
+	        self.nostrils = 2
+	        self.__liver = 1
+	        self.voice = "Grunt"
+	        
+	def get_liver(self):
+		print(f"Liver = {self.__liver}")
+	def set_liver(self,liver):
+		self.__liver = liver	
+	
+	def __del__(self):
+		print("Save Me!!!")
+		
 class Tiger(carnivores):
-    def __init__(self):
-        super().__init__()
-        self.strips = "Black"
-        self.color = "Orange"
-        self.voice = "Roar"
-        self.fingers = "Claws"
+	def __init__(self):
+	        super().__init__()
+	        self.strips = "Black"
+	        self.color = "Orange"
+	        self.voice = "Roar"
+	        self.__claws = 20
+	        
+	def get_claws(self):
+		print(f"Claws = {self.__claws}")
+	def set_claws(self,claw):
+		self.__claws = claw
+		
+	def __del__(self):
+		print("Save Tigers")       
 
 class Dog(domestic_animal):
     def __init__(self):
@@ -110,18 +135,14 @@ class Giraffe(herbivores):
         self.color = "Yellow"
         self.dots = "Present"
 
-class Albatross(wild_animal):
-    def __init__(self):
-        super().__init__()
-        self.beak = "Long beak"
-        self.wing = "Large"
-        self.color = "Black White Grey"
-        self.tail = 0
-        self.legs = 2
-        self.nose = 0
-        self.ears = 0
+init = 1
+a1 = Giraffe()
 
-    def __del__(self):
-        print("Even you Brutus!!!\n")
+print(a1.height)
 
-a1 = Albatross()
+emp = Elephant()
+emp.set_tusks(0)
+emp.get_tusks()
+
+emp = Fish()
+emp.get_liver()
