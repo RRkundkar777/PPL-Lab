@@ -66,8 +66,7 @@ c1.show()
 poly1 = polygon(11,100)
 plot1 = triangle(250)
 poly1.show()
-plot1.show()
-
+plot1.info()
 
 
 
