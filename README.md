@@ -17,8 +17,7 @@ Every assignment is equipped with a README. Please go through it.
 built and destroyed.
 3. Use gdb to read assembly code for C program to find factorial of a number with recursion
 and demonstrate how parameters are passed using pass by value.
-4. Explain how pass by reference works, using assembly code generated using g++ -S on a
-C++ program.
+4. Inspect the Cfg dumps by creating trees using graphviz and viewing them.
 5. Write a program to develop a software to introduce animals to kids. Implement classes for
 animals like Dog, Cat, Elephant, Fish etc. With constructor destructor interfaces and
 variables with public or private access specifies.
